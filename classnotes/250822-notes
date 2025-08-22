@@ -1,0 +1,45 @@
+MEMEX
+    - Mekanisert fil- og bibliotekssystem
+    - Prototype av hypertext system
+    - Early edition av databaser
+    "As we may think" av Vannevar Bush (1945)
+
+Front End                                               Back End
+    - Brukergrensesnitt og brukeropplevelse                 - Alt som skjer bak hva en bruker ser og gjør
+    - Alt en ser og bruker på en nettside                   - Server og databasekommunikasjon
+    - HTML, CSS3, JavaScript                                - Programmeringsspråk som PHP, Python, Ruby, MySQL
+
+Nettsted
+    - Samling av relaterte nettsider
+    - Et sett med nettsider som deler en hensikt eller tema
+    - Noen få eller flere sider.
+
+Nettside
+    - Enkelt dokument eller fil.
+    - Enhet av et større nettsted (-SPA)
+    - HTML5
+        * Kan inkludere flere element, f.eks. bilder, videoer, tekst, osv.
+    - Egen unik URL (Unifrom Resource Locator).
+
+
+INNHOLD
+    - tekst, bilder, lyd, video.
+* Alt med mening. (HTML)
+
+DESIGN
+    - Fonter, Farger, Luft.
+* Lages med CSS, er kun pynt, med mindre det finnes innhold.
+
+FUNKSJONALITET
+    - CTA - Call To Action, Knapper, Skjema, Interaksjon.
+* JavaScript brukes for å lage kommunikasjon mellom bruker og nettsted.
+
+HYPERTEXT
+    - Tekst med lenker til annen tekst.
+    - Hypertekst er en måte å organisere informasjon på, der brukeren kan navigere mellom ulike dokumenter eller deler av et dokument ved hjelp av lenker.
+    - Hypertekst er grunnlaget for World Wide Web.
+
+SERVER 
+    - is a software or hardware that treats requests made over a network.
+* My server: (itstud.hiof.no/~ahhenden)
+
