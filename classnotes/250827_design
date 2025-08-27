@@ -1,0 +1,87 @@
+Hvem designer vi for?
+    - Pensjonister?
+    - Barn og unge?
+    - Unge voksne til vel voksne? 
+
+Rammeverk
+    - Brukere
+        - Brukeroppgaver, behov, erfaringer og søkemønster.
+    - Innhold
+        - Dokument, data, struktur, volum, innholdsobjekt.
+    - Kontekst
+        - Forretningsmål, økonomi, kultur, teknologi, ressurser og begrensninger. 
+
+
+BRUKSMØNSTER
+    Misjon  ->  Scanning  ->  Valg
+    Hva vi leter etter  ->  Vi leser ikke   ->  Ufarlig/enklere enn å overveie
+
+- Ikke bruk overflødig introduksjoner til nettsider. 
+- Ikke bruk instruksjoner, design etter intuisjon.
+- Jo viktigere, jo tydeligere | LOGIKK
+- Bryt opp siden i klare, definerte områder. 
+- Gjør tydelig klart hva som er klikkbart, minimer visuell støy.
+- De 10 bud: Jakob Nielsen 10 heuristikker
+
+
+PLANLEGGING ER Å DESIGNE
+- Mange begynner i feil ende. | - HVA ER INNHOLDET, OG HVEM SKAL FINNE DET?
+
+- Hvor starter vi?
+    - Forundersøkelser (rammeverk, benchmarking, snakke med brukere)
+    - Skisser / Wireframes
+    - Strukturside/strukturdesign (HTML & CSS) med dummyinnhold
+    - Designelementer (Farger, fonter og div pynt)
+    - Implementere innhold.
+Brukertesting gjør kontinuerlig igjennom prosjektet. 
+
+- Responsiv design
+- Samme HTML-fil og samme innhold uansett skjermstørrelse.
+    - Skaleres basert på enhet og skjerm det vises på.
+- Design basert på større enn / mindre enn, ikke faste størrelser.
+- Planlegg i Grids (flytende innhold, forenkler struktur for responsivt design)
+    - Sjekk presentasjon for Onsdag (uke 35)
+- Det gylne snitt i webdesign
+    - 1,6 | 62% | 2/3
+
+MOBILE FIRST | Hva gjør en mobilside god? 
+- Lasting av små bilder. 
+    - Bruk <picture> taggen
+- Unngå hardkodede fontstørrelser.
+- Fjern/juster margin og padding.
+- Tenk touch! 
+- Fjerne dynamisk innhold?
+    - Slider, hover, animasjon.
+- Kun én kolonne? 
+- Google liker ikke store, tunge filer
+    - Vil bli nedprioritert i søkemonitor. 
+
+PRINTVENNLIGE SIDER |   Hva gjør en side printbar?
+- Fjerne farger?
+- Fjerne design?
+- Serif-fonter (Ser bedre ut på papir)
+- La linker ha standard utseende
+    - Fjerne link og ha URL
+- Juster fontstørrelser, sidebredder og skalering.
+- Fjern menyer, bildeelementer og annet urelevant støy.
+- Fjern/erstatt dynamisk innhold.
+- Sidebrudd (pagebreak) ved bruk av CSS
+
+BRUKERTEST / USABILITY TESTING
+- Få innsikt
+- Forbedre produkt
+- Redusere kostnader
+- Sikre tilgjengelighet
+- Vi er ikke ute etter hva brukeren syns! 
+
+- Det skal ikke bare fungere, brukeren skal ikke bare forstå hvordan det brukes.
+    - MEN opplevelsen skal være positiv.
+
+TESTPLAN
+- Hvorfor skal du teste? (Hensikt/formål)
+- Hvem skal teste? (Målgruppe?)
+- Hvordan skal testen gjennomføres/testes? (Metode)
+- Hva skal testes? (Brukeroppgaver/scenarioer)
+- Hva skal hentes inn? (Måledata)
+- All feedback er god feedback! 
+
