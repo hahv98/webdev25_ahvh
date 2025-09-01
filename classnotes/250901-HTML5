@@ -1,0 +1,21 @@
+HTML - Hyper Text Markup Language.
+
+HTML5
+    - Nye strukturtagger
+    - Video/Audio
+    - 2D & 3D grafikk via <canvas>
+    - Utvidet støtte for webapplikasjoner.
+        - Local lagring, geolokasjon, input etc.
+    - JavaScript veldig viktig for ny funksjonalitet.
+
+En tag kan ha attributes.
+    - <tagname attribute= "some_value">innhold</tagname>
+
+HTML Terminologi
+    - Element
+        - Hele blokken med tager og innhold.
+    - Tag
+        - 
+    - Attribute
+        - 
+
