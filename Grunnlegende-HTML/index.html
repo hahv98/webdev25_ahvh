@@ -8,18 +8,87 @@
 <body>
   <header>
     <!--<h1>My first webpage</h1>-->
-    <a href="index.html"><strong>BaxLabs</strong></a>
+    <h2><a href="index.html">BaxLabs</a></h2>
     <nav id="headermenu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
-      </ul>
+      </ul> 
     </nav>
   </header>
   <section>
     <h2>Crazy Gaming Deals!</h2>
-    <img src="https://picsum.photos/200/300/?blur" alt="">
+    <!--<img> = Bilde | src = Kilde URL | alt = Alternativ tekst for skjermlesere når bildet ikke laster-->
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
     <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="offers.html">See offers</a>
   </section>
+  <main>
+    <section id="popgames">
+      <h2>Popular Games</h2>
+      <article id="HD2">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Helldivers 2">
+        <h3>Helldivers 2</h3>
+        <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>299,-</p>
+        <a href="">Add to Cart</a>
+      </article>
+      <article id="GTAV">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Grand Theft Auto V">
+        <h3>Grand Theft Auto V</h3>
+        <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>499,-</p>
+        <a href="">Add to Cart</a>
+      </article>
+      <article id="GTAIV">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="Grand Theft Auto IV">
+        <h3>Grand Theft Auto IV</h3>
+        <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>179,-</p>
+        <a href="">Add to Cart</a>
+      </article>
+      <article id="TESVS">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="The Elder Scrolls V: Skyrim">
+        <h3>The Elder Scrolls V: Skyrim</h3>
+        <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>299,-</p>
+        <a href="">Add to Cart</a>
+      </article>
+    </section>
+    <section id="catmenu">
+      <h2>Categories</h2>
+      <article>
+        <h3><a href="allgames.html">All Games</a></h3>
+      </article>
+      <article>
+        <h3><a href="dlcs.html">DLCS</a></h3>
+      </article>
+      <article>
+        <h3><a href="merchandise.html">Merchandise</a></h3>
+      </article>
+      <article>
+        <h3><a href="accesories.html">Accesories</a></h3>
+      </article>
+    </section>
+  </main>
+  
+  <aside>
+    <h4>Sign up to the Labs!</h4>
+    <p>Join the Labs for exclusive deals just for members.</p>
+    <form id="submission">
+      <label>
+        E-mail:
+        <input type="email" placeholder="ola.nordmann@hiof.no">
+      </label>
+      <input type="submit" value="Sign up">
+      <label for="age-validation">Over 18</label>
+      <input type="checkbox" id="age-validation">
+    </form>
+  </aside>
+  
+  <footer>
+    <h2>BaxLabs</h2>
+    
+  </footer>
 </body>
 </html>
