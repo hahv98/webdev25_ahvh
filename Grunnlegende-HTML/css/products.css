@@ -1,0 +1,52 @@
+:root{
+  --basic-grey: #efefefef;
+  --basic-gold: #b19d46;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#global-header { /*Header til hele nettstedet*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  nav{
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        list-style-type: none;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#mainlogo { /*Logo til nettsiden*/
+    font-size: 30px;
+    font-family: arial, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+td {
+    text-align: center;
+}
