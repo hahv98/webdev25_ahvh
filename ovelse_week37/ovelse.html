@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <title>Labøvelser</title>
     <style>
         body {
@@ -22,8 +23,8 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Logo</h1>
+    <header id="global-header">
+        <h1 id="mainlogo">Logo</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
@@ -111,11 +112,11 @@
             </tbody>
         </table>
     </main>
-    <footer>
+ <footer>
         <h4>Kontakt oss</h4>
         <p>Audun H.V. Henden | ahhenden@hiof.no</p>
 
-        <form action="/send melding" method="mail">
+        <form action="/send melding" method="mail" id="contact">
             <label for="navn">Navn: </label>
             <input type="text" id="navn" name="navn"><br>
             
@@ -128,7 +129,7 @@
             <label for="melding">Melding: </label>
             <input type="text" id="melding" name="melding"><br>
 
-            <input type="submit" value="send melding">
+            <input class="btn" type="submit" value="send melding">
 
         </form>
 

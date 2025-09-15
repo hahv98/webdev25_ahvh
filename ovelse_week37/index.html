@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <title>Gjenbrukbar Mal - Uke 37</title>
 </head>
 <body>
-    <header>
-        <h1>Logo</h1>
+    <header id="global-header">
+        <h1 id="mainlogo">Logo</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
@@ -42,9 +43,10 @@
         </section>
         <section>
             <h3>Google søkeresultat</h3>
-            <ul>
-                <li><a href="https://www.google.com/search?q=HTML5&sca_esv=79c832bf811e105b&sxsrf=AE3TifOf_X0QSvZgz-YQfzNSVpcW0u6_vQ%3A1757334347091&source=hp&ei=S8u-aNTyAquP9u8P4svtgA0&iflsig=AOw8s4IAAAAAaL7ZW9zDD2jWPXWoS1Tfo5AWt8v_biVg&ved=0ahUKEwiUxIfMlMmPAxWrh_0HHeJlG9AQ4dUDCCk&uact=5&oq=HTML5&gs_lp=Egdnd3Mtd2l6IgVIVE1MNTILEAAYgAQYkQIYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyChAAGIAEGBQYhwIyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFSKZFUABY60NwAngAkAEAmAGhAqAB7wiqAQUwLjYuMbgBA8gBAPgBAZgCCKACnwjCAgoQIxiABBgnGIoFwgILEC4YgAQY0QMYxwHCAggQLhiABBjUApgDAJIHBTIuNS4xoAerKbIHBTAuNS4xuAeKCMIHBTItNC40yAc9&sclient=gws-wiz">HTML:5</a></li>
-            </ul>
+            <a class="googlebtn" href="https://www.google.com/search?q=HTML5&sca_esv=79c832bf811e105b&sxsrf=AE3TifOf_X0QSvZgz-YQfzNSVpcW0u6_vQ%3A1757334347091&source=hp&ei=S8u-aNTyAquP9u8P4svtgA0&iflsig=AOw8s4IAAAAAaL7ZW9zDD2jWPXWoS1Tfo5AWt8v_biVg&ved=0ahUKEwiUxIfMlMmPAxWrh_0HHeJlG9AQ4dUDCCk&uact=5&oq=HTML5&gs_lp=Egdnd3Mtd2l6IgVIVE1MNTILEAAYgAQYkQIYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyChAAGIAEGBQYhwIyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFSKZFUABY60NwAngAkAEAmAGhAqAB7wiqAQUwLjYuMbgBA8gBAPgBAZgCCKACnwjCAgoQIxiABBgnGIoFwgILEC4YgAQY0QMYxwHCAggQLhiABBjUApgDAJIHBTIuNS4xoAerKbIHBTAuNS4xuAeKCMIHBTItNC40yAc9&sclient=gws-wiz">HTML:5</a>
+            <!-- <ul>
+                <li><a class="googlebtn" href="https://www.google.com/search?q=HTML5&sca_esv=79c832bf811e105b&sxsrf=AE3TifOf_X0QSvZgz-YQfzNSVpcW0u6_vQ%3A1757334347091&source=hp&ei=S8u-aNTyAquP9u8P4svtgA0&iflsig=AOw8s4IAAAAAaL7ZW9zDD2jWPXWoS1Tfo5AWt8v_biVg&ved=0ahUKEwiUxIfMlMmPAxWrh_0HHeJlG9AQ4dUDCCk&uact=5&oq=HTML5&gs_lp=Egdnd3Mtd2l6IgVIVE1MNTILEAAYgAQYkQIYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyChAAGIAEGBQYhwIyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBhDGIoFSKZFUABY60NwAngAkAEAmAGhAqAB7wiqAQUwLjYuMbgBA8gBAPgBAZgCCKACnwjCAgoQIxiABBgnGIoFwgILEC4YgAQY0QMYxwHCAggQLhiABBjUApgDAJIHBTIuNS4xoAerKbIHBTAuNS4xuAeKCMIHBTItNC40yAc9&sclient=gws-wiz">HTML:5</a></li>
+            </ul> -->
         </section>
     </aside>
 
@@ -65,7 +67,7 @@
             <label for="melding">Melding: </label>
             <input type="text" id="melding" name="melding"><br>
 
-            <input type="submit" value="send melding">
+            <input class="btn" type="submit" value="send melding">
 
         </form>
 
