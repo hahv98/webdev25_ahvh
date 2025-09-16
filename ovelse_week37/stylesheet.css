@@ -15,7 +15,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    background-image: url(/Grunnlegende-HTML/img/hd2.jpg);
+    background-image: url(img/plufow-le-studio-2gibGPmduPA-unsplash.jpg);
     background-size: cover;
     height: 300px;
     nav {
@@ -32,9 +32,12 @@ a {
         }
     }
     #mainlogo {
-        font-weight: bold;
+        width: 30%;
+        height: auto;
+        display: flex;
+        /* font-weight: bold;
         text-transform: uppercase;
-        color: #fff;
+        color: #fff; */
     }
 }
 
@@ -63,7 +66,7 @@ aside {
 
 .googlebtn {
     display: inline-block;
-    background-color: #a4c718;
+    background-color: #e2044a;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
