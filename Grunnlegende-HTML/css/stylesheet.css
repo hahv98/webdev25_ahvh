@@ -56,6 +56,16 @@ a:focus {
   outline-offset: 2px;
 }
 
+.fa-burger {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.fa-brands {
+  display: inline-block;
+  font-size: 20px;
+}
+
 .deal-selection { /*Crazy Gaming Deals*/
   background-image: url("https://picsum.photos/500/500?grayscale");
   background-repeat: no-repeat;
@@ -159,6 +169,11 @@ footer {
   #global-header {
     grid-column: 1 / 4;
   }
+
+  .fa-burger {
+  display: none;
+  }
+
   .deal-selection {
     grid-column: 1 / 4;
   }
