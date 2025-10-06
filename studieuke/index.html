@@ -3,31 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="icons/css/fontawesome.css" rel="stylesheet">
+    <link href="icons/css/brands.css" rel="stylesheet">
+    <link href="icons/css/solid.css" rel="stylesheet">
+    <link href="icons/css/sharp-thin.css" rel="stylesheet">
+    <link href="icons/css/sharp-duotone-thin.css" rel="stylesheet">
     <title>Studieuke trening</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <div id="grid-container">
-        <header>
-            <h2>LOGO</h2>
+        <header id="global-header">
             <nav>
-                <ul>
-                    <li>side 1</li>
-                    <li>side 2</li>
-                    <li>side 3</li>
+                <h1><a href="index.html"><img src="img/baxlogo-small.png" alt="LOGO" id="logo"></a></h1>
+                <div class="group">
+                    <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="opennav" class="icon-btn"><i class="fa-solid fa-bars"></i></button> <!--Burger menu unicode-->
+                </div>
+                <ul id="menu" class="hidden">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><button id="closenav">Close menu</button></li>
                 </ul>
-                <p>søk</p>
             </nav>
+            <section id="hero">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum qui autem porro illum?</h2>
+                <a href="#" class="btn">Contact us today</a>
+            </section>
         </header>
         <main>
-            <section>
-                <article>
-                    <h3>Main big article</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos deserunt ab consequatur maxime aliquam magni vel assumenda quam omnis excepturi sequi, harum fugiat et ratione repudiandae autem voluptates recusandae a.</p>
+            <section class="highlight">
+                    <h2>Article 1</h2>
+                    <figure><img src="https://picsum.photos/id/43/200/300" alt=""></figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </section>
+            <section class="highlight">
+                    <h2>Article 2</h2>
+                    <figure>
+                        <picture>
+                            <img src="https://picsum.photos/id/45/200/300" alt="">
+                        </picture>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <article class="service-card">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h3>SEO</h3>
+                    <p>Our services combine cutting-edge technology...</p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Website Design</h3>
+                    <p>Our services combine cutting-edge technology...</p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-suitcase"></i>
+                    <h3>SEM</h3>
+                    <p>Our services combine cutting-edge technology...</p>
                 </article>
             </section>
         </main>
         <footer></footer>
     </div>
+<script src="javascript/script.js"></script>
 </body>
 </html>
