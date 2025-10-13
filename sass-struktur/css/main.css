@@ -1,0 +1,14 @@
+.flex, .flex-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", Helvetica, sans-serif;
+  background-color: #efefef;
+}/*# sourceMappingURL=main.css.map */
