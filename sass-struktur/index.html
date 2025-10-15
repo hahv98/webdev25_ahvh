@@ -6,25 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>SASS</title>
 </head>
-<body class="flex-column">
-    <header>
-        <h1>My first SASS website</h1>
-    </header>
-    <main class="flex">
-        <article>
-            <h3>Card</h3>
-        </article>
+<body>
+    <div class="flex-column main-container">
+        <header>
+            <h1>Min første SASS nettside</h1>
+        </header>
+        <main class="flex">
+            <section id="grid-layout">
+                <article class="card success">
+                    <h3>Suksess</h3>
+                </article>
 
-        <article>
-            <h3>Card</h3>
-        </article>
+                <article class="card warning">
+                    <h3>Advarsel</h3>
+                </article>
 
-        <article>
-            <h3>Card</h3>
-        </article>
-    </main>
-    <footer>
-        <p>Webdevelopment 2025</p>
-    </footer>
+                <article class="card error">
+                    <h3>ERROR!</h3>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Webutvikling 2025</p>
+        </footer>
+    </div>
 </body>
 </html>

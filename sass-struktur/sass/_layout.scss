@@ -1,6 +1,42 @@
+@mixin alterLayout($columns, $rows) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: 1rem;
+}
+
+@mixin gridPlacement($columns, $rows) {
+    grid-column: $columns;
+    grid-row: $rows;
+}
+
+#grid-layout {
+    @include alterLayout(1fr 1fr, auto auto);
+
+    article{
+        &:nth-child(1){
+            @include gridPlacement(1 / 2, 1 / 2);
+        }
+        &:nth-child(2){
+            @include gridPlacement(2 / 3, 1 / 2);
+        }
+        &:nth-child(3){
+            @include gridPlacement(span 2, 2 / 3);
+        }
+    }
+}
+
+.main-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .flex-column {
