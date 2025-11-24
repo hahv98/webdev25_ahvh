@@ -20,4 +20,273 @@
 
 body {
     background-color: var(--dark-bg);
+    color: var(--txt-primary);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.global-header {
+    background: var(--glass-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(255, 255 , 255, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo */
+.logo {
+    position: relative;
+    color: var(--netflix-red);
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+    text-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+}
+
+.logo i {
+    margin-right: 8px;
+    color: var(--netflix-red);
+    text-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
+}
+
+.logo::after {
+    content: 'EXAM PREP';
+    position: absolute;
+    bottom: -8px;
+    right: -5px;
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--txt-primary);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.mobile-menu-btn:hover {
+    color: var(--netflix-red);
+}
+
+/* Nav menu - Modern design */
+.navmenu {
+    display: flex;
+    gap: 28px;
+}
+.navmenu li {
+    color: var(--txt-secondary);
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+    transition: var(--transition);
+    font-weight: 500;
+    padding: 5px 0;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+.navmenu li:hover, .navmenu li a.active {
+    color: var(--txt-primary);
+}
+.navmenu li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--netflix-red);
+    transition: var(--transition);
+}
+.navmenu li a:hover::after, .navmenu li a.active::after {
+    width: 100%;
+}
+
+/* User menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.search-btn, .notifications-btn{
+    font-size: 1.3rem;
+    /* color: var(--txt-primary); */
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+.search-btn:hover, .notifications-btn:hover {
+    color: var(--netflix-red);
+    transform: scale(1.1);
+}
+.notifications-btn::after {
+    content: '3';
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: var(--netflix-red);
+    color: white;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.profile-menu:hover {
+    transform: scale(1.05);
+}
+
+.profile-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+.profile-menu:hover img {
+    border-color: var(--netflix-red);
+}
+
+.profile-menu i {
+    font-size: 0.9rem;
+    color: var(--txt-primary);
+    font-weight: 500;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(18, 18, 18, 0.9);
+    padding: 30px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 80px; /* Below Header */
+    height: calc(100vh - 80px);
+    z-index: 90;
+    transition: var(--transition);
+    min-width: 260px;
+}
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--netflix-red), #b81d24);
+}
+
+.sbsec {
+    margin-bottom: 35px;
+    padding: 0 20px;
+}
+
+.sbsec h3 {
+    color: var(--txt-secondary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    color: var(--txt-secondary);
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: var(--transition);
+    border-radius: 6px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.1), transparent);
+    transition: var(--transition);
+}
+
+.sidebar-link:hover::before {
+    left: 100%;
+}
+
+.sidebar-link i {
+    margin-right: 15px;
+    width: 24px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--txt-secondary);
+    transition: var(--transition);
+}
+
+.sidebar-link:hover, .sidebar-link:active {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--txt-primary);
+}
+
+.sidebar-link:hover i, .sidebar-link:active i {
+    color: var(--netflix-red);
 }
